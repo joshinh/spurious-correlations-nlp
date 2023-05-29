@@ -1,0 +1,32 @@
+train_dataset: multi_nli
+swap_labels: false
+training:
+  num_train_epochs: 3
+  warmup_ratio: 0.1
+  weight_decay: 0.1 # For RoBERTa
+  learning_rate: 1e-5 # For RoBERTa
+  train_batch_size: 32
+  eval_batch_size: 16
+  init_classifier: false
+  logging_steps: 2500
+  eval_steps: 5000
+subset_size: -1
+max_seq_length: 128
+seed: 42
+overwrite_cache: false
+do_train: true
+do_eval: true
+freeze_encoder: false
+type: simple
+loss_fn: explicit/poe
+weak_model_name_or_path: /scratch/nhj4247/robustness/bias-probing/models/seed:42/synthetic_weak_dummy
+expert_policy: freeze
+poe_alpha: 0.0
+dfl_gamma: 2.0
+lambda_bias: 1.0
+model_name_or_path: roberta-large
+output_dir: checkpoints
+tag: baseline
+bias_type: hypo
+output_model_logits: false
+load_predictions_mode: new

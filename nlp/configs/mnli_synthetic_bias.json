@@ -1,0 +1,8 @@
+{
+  "name": "mnli-synthetic-bias",
+  "type": "bias",
+  "dataset_name": "multi_nli_synthetic",
+  "kwargs": {
+	  "num_labels": "2"
+  }
+}
