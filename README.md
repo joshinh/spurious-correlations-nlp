@@ -18,7 +18,7 @@ pip3 install -r requirements.txt
 
 ### 2. Datasets
 
-Most of the NLP datasets are already prepared and our available at ```nlp/data```. Some which were too large to upload (MNLI training data and MNLI synthetic training data) are uploaded [here](). Overall, these datasets include the MNLI training dataset, MNLI synthetic training datasets, as well as the training and evaluation datasets corresponding to the different groups (e.g. high word overlap).
+Most of the NLP datasets are already prepared and our available at ```nlp/data```. Some which were too large to upload (MNLI training data and MNLI synthetic training data) are uploaded [here](https://drive.google.com/file/d/1RzVsoglufma8gvKxc4hSXTHgHSopm6RR/view?usp=sharing). Overall, these datasets include the MNLI training dataset, MNLI synthetic training datasets, as well as the training and evaluation datasets corresponding to the different groups (e.g. high word overlap).
 
 ### 3. Training
 
